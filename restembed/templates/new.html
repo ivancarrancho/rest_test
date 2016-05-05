@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+</head>
+    <body>
+        {% for video in videos %}
+            {{ video.id }}
+            <br>
+            {{ video.title }}
+            <br>
+            {{ video.description }}
+            <br>
+            {{ video.version }}
+            <br>
+        {% endfor %}
+    </body>
+</html>

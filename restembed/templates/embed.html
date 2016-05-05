@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block task %}
+    <ul>
+        <li>{{ embed.title }}</li>
+        <li>{{ embed.description }}</li>
+    </ul>
+        <div>
+            {% autoescape off %}
+                {{ embed.html }}
+            {% endautoescape %}
+        </div>
+    <img src="{{ embed.thumbnail_url }}" />
+{% endblock %}

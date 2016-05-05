@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block task %}
+    <form action="/" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Save"/>
+    </form>
+    <br>
+    <form action="{% url 'view-all' %}">
+        <input type="submit" value="Se all">
+    </form>
+{% endblock %}
